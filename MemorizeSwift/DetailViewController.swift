@@ -17,12 +17,11 @@ class DetailViewController: UIViewController {
     // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         title = swiftTerm.term
         navigationItem.largeTitleDisplayMode = .never
-        
-        textView.text = swiftTerm.description
 
+        textView.text = swiftTerm.description
     }
 
 }
