@@ -12,3 +12,17 @@ struct SwiftTerm: Decodable {
     var term: String
     var description: String
 }
+
+extension Array where Element == SwiftTerm {
+    func matching(_ text: String?) -> [SwiftTerm] {
+        if let text = text, text.count > 0 {
+            let lowercasedText = text.lowercased()
+            return self.filter {
+                $0.term.lowercased().contains(lowercasedText)
+                    || $0.description.lowercased().contains(lowercasedText)
+            }
+        } else {
+            return self
+        }
+    }
+}

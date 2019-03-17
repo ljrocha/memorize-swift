@@ -51,13 +51,13 @@
         <!--Detail View Controller-->
         <scene sceneID="a15-bp-d8L">
             <objects>
-                <viewController storyboardIdentifier="Detail" id="1u2-p3-HpP" customClass="DetailViewController" customModule="MemorizeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="1u2-p3-HpP" customClass="DetailViewController" customModule="MemorizeSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vbu-0p-Kgn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="78G-Jf-GU9">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78G-Jf-GU9">
+                                <rect key="frame" x="8" y="48" width="398" height="806"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -66,10 +66,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="c26-9X-JaS" firstAttribute="bottom" secondItem="78G-Jf-GU9" secondAttribute="bottom" id="Yjc-QP-vCz"/>
-                            <constraint firstItem="78G-Jf-GU9" firstAttribute="top" secondItem="c26-9X-JaS" secondAttribute="top" id="ZBP-VN-vuA"/>
-                            <constraint firstItem="78G-Jf-GU9" firstAttribute="leading" secondItem="c26-9X-JaS" secondAttribute="leading" id="c3z-jX-G5J"/>
-                            <constraint firstItem="c26-9X-JaS" firstAttribute="trailing" secondItem="78G-Jf-GU9" secondAttribute="trailing" id="eyX-Ki-Jnh"/>
+                            <constraint firstItem="c26-9X-JaS" firstAttribute="bottom" secondItem="78G-Jf-GU9" secondAttribute="bottom" constant="8" id="Yjc-QP-vCz"/>
+                            <constraint firstItem="78G-Jf-GU9" firstAttribute="top" secondItem="c26-9X-JaS" secondAttribute="top" constant="4" id="ZBP-VN-vuA"/>
+                            <constraint firstItem="78G-Jf-GU9" firstAttribute="leading" secondItem="c26-9X-JaS" secondAttribute="leading" constant="8" id="c3z-jX-G5J"/>
+                            <constraint firstItem="c26-9X-JaS" firstAttribute="trailing" secondItem="78G-Jf-GU9" secondAttribute="trailing" constant="8" id="eyX-Ki-Jnh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c26-9X-JaS"/>
                     </view>
