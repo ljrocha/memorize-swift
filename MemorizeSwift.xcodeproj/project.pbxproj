@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		465400C5223DD2F70025F68D /* SwiftTerms.json in Resources */ = {isa = PBXBuildFile; fileRef = 465400C4223DD2F70025F68D /* SwiftTerms.json */; };
+		465400C7223DD5D90025F68D /* SwiftTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465400C6223DD5D90025F68D /* SwiftTerm.swift */; };
+		465400CB223DD9A30025F68D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465400CA223DD9A30025F68D /* DetailViewController.swift */; };
 		46DCD875223DCF7300062308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCD874223DCF7300062308 /* AppDelegate.swift */; };
 		46DCD877223DCF7300062308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCD876223DCF7300062308 /* ViewController.swift */; };
 		46DCD87A223DCF7300062308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DCD878223DCF7300062308 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		465400C4223DD2F70025F68D /* SwiftTerms.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SwiftTerms.json; sourceTree = "<group>"; };
+		465400C6223DD5D90025F68D /* SwiftTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTerm.swift; sourceTree = "<group>"; };
+		465400CA223DD9A30025F68D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		46DCD871223DCF7300062308 /* MemorizeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemorizeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DCD874223DCF7300062308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46DCD876223DCF7300062308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +62,13 @@
 			children = (
 				46DCD874223DCF7300062308 /* AppDelegate.swift */,
 				46DCD876223DCF7300062308 /* ViewController.swift */,
+				465400CA223DD9A30025F68D /* DetailViewController.swift */,
 				46DCD878223DCF7300062308 /* Main.storyboard */,
 				46DCD87B223DCF7400062308 /* Assets.xcassets */,
+				465400C6223DD5D90025F68D /* SwiftTerm.swift */,
 				46DCD87D223DCF7400062308 /* LaunchScreen.storyboard */,
 				46DCD880223DCF7400062308 /* Info.plist */,
+				465400C4223DD2F70025F68D /* SwiftTerms.json */,
 			);
 			path = MemorizeSwift;
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 				46DCD87F223DCF7400062308 /* LaunchScreen.storyboard in Resources */,
 				46DCD87C223DCF7400062308 /* Assets.xcassets in Resources */,
 				46DCD87A223DCF7300062308 /* Main.storyboard in Resources */,
+				465400C5223DD2F70025F68D /* SwiftTerms.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +147,8 @@
 			files = (
 				46DCD877223DCF7300062308 /* ViewController.swift in Sources */,
 				46DCD875223DCF7300062308 /* AppDelegate.swift in Sources */,
+				465400C7223DD5D90025F68D /* SwiftTerm.swift in Sources */,
+				465400CB223DD9A30025F68D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
