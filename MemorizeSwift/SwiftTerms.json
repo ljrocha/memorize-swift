@@ -1,0 +1,10 @@
+[
+	{
+		"term": "Array",
+		"description": "A sequential collection of values of any type"
+	},
+	{
+		"term": "Boolean",
+		"description": "A data type that stores either true or false"
+	}
+]
