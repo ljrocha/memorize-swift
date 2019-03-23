@@ -14,6 +14,7 @@ class DetailViewController: UIViewController {
     
     var swiftTerm: SwiftTerm!
     var blankCounter = 0
+    var fullyVisible = false
 
     let visibleText: [NSAttributedString.Key: Any] = [
         .font: UIFont(name: "Georgia", size: 24)!,
@@ -44,7 +45,7 @@ class DetailViewController: UIViewController {
         textView.attributedText = showText(for: swiftTerm)
     }
     
-    func showText(for swiftTerm: SwiftTerm, fullyVisible: Bool = false) -> NSAttributedString {
+    func showText(for swiftTerm: SwiftTerm) -> NSAttributedString {
         if fullyVisible {
             return NSAttributedString(string: swiftTerm.description, attributes: visibleText)
         }
@@ -66,7 +67,7 @@ class DetailViewController: UIViewController {
                     punctuation = String(strippedWord.removeLast())
                 }
                 
-                let attributedWord = NSAttributedString(string: "\(word)", attributes: invisibleText)
+                let attributedWord = NSAttributedString(string: "\(strippedWord)", attributes: invisibleText)
                 output.append(attributedWord)
                 
                 if let symbol = punctuation {
@@ -87,7 +88,8 @@ class DetailViewController: UIViewController {
     }
     
     @objc func swipeOccurred() {
-        textView.attributedText = showText(for: swiftTerm, fullyVisible: true)
+        fullyVisible = true
+        textView.attributedText = showText(for: swiftTerm)
     }
 
 }
